@@ -1,0 +1,30 @@
+/// <reference types="node" />
+
+export declare namespace myJSEncrypt{
+    export class JSEncrypt{
+
+        constructor(option ?: any);
+
+        setKey(key : any):void;
+
+        setPrivateKey(privkey : any):void;
+
+        setPublicKey(pubkey : any):void;
+
+        decrypt(string : any):any;
+
+        encrypt(string : any):any;
+
+        getKey(cb ?: any):any;
+
+        getPrivateKey():any;
+
+        getPrivateKeyB64():any;
+
+        getPublicKey():any;
+
+        getPublicKeyB64():any;
+
+        nextBytes(bytesLen : any):any;
+    }
+}
